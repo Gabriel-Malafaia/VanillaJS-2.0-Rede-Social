@@ -1,0 +1,25 @@
+.input-default{
+    width: 100%;
+    border-radius: var(--radius3);
+    padding: 0 16px;
+    height: var(--inputHeigthDefault);
+    border: 3px solid var(--colorGrey4);
+    transition: all 0.5s;
+}
+
+.input-default:focus{
+    border: 3px solid var(--colorPrimary);
+}
+
+.input-default:valid::placeholder{
+    color: var(--colorGrey2);
+}
+
+.input-default.medium{
+    height: var(--inputHeigthMedium);
+}
+
+.input-default.little{
+    height: var(--inputHeigthLittle);
+}
+

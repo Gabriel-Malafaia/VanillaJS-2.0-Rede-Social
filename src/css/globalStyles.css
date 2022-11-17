@@ -1,0 +1,62 @@
+:root {
+    /* Colors */
+    --colorPrimary: #4263EB;
+    --colorSecundary:#364FC7;
+    --colorGrey0: #0A0C0D;
+    --colorGrey1: #212529;
+    --colorGrey2: #495057;
+    --colorGrey3: #868E96;
+    --colorGrey4: #DEE2E6;
+    --colorGrey5: rgba(33, 37, 41, 0.5);
+    --colorWhite: #FFFFFF;
+    --colorLike: #D7443E;
+
+    /* Titles sizes */
+    --fontTitle1: 28px;
+    --fontTitle2: 20px;
+    --fontTitle3: 18px;
+    --fontTitle4: 16px;
+
+    /* Text sizes */
+    --fontText1: 16px;
+    --fontText2: 14px;
+    --fontText3: 12px;
+
+    /* Text Weigths */
+    --fontWeigth1: 700;
+    --fontWeigth2: 600;
+    --fontWeigth3: 400;
+
+    /* Radius */
+    --radius1: 12px;
+    --radius2: 9px;
+    --radius3: 6px;
+
+    /* Heigth components */
+    
+    --buttonHeigthDefault: 44px;
+    --buttonHeigthMedium: 34px;
+    --buttonHeigthLittle: 26px;
+
+    --inputHeigthDefault: 44px;
+    --inputHeigthMedium: 34px;
+    --inputHeigthLittle: 26px;
+
+    /* Width components */
+
+    --buttonWidthDefault: 240px;
+    --buttonWidthMedium: 190px;
+    --buttonWidthLittle: 140px;
+
+    --inputWidthDefault: 240px;
+    --inputWidthMedium: 190px;
+    --inputWidthLittle: 140px;
+
+    /* margins */
+
+    --gap-1: 32px;
+    --gap-2: 28px;
+    --gap-3: 24px;
+    --gap-4: 20px;
+    --gap-5: 16px;
+}

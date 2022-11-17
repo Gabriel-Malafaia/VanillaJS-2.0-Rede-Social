@@ -1,0 +1,242 @@
+main {
+    width: 100%;
+    margin-top: 80px;
+    height: 100vh;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.main__content aside {
+    max-width: 400px;
+    width: 90%;
+    height: 100%;
+    padding-top: 5px;
+    margin-left: 2rem;
+}
+
+.post__content {
+    max-width: 750px;
+    width: 100%;
+}
+
+.post__first,
+.posts__users--perfil {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.posts__users--perfil {
+    margin: 0;
+}
+
+.post__first--infoUser,
+.post__users--infoUser {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post__first--followers {
+    height: 35px;
+}
+
+.post__first img,
+.aside__users--info img,
+.posts__users--perfil img,
+.modal__post--up img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.post__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post__form textarea {
+    resize: none;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.post__form textarea:nth-child(1) {
+    height: 1.5rem;
+}
+
+.post__form textarea:nth-child(2) {
+    height: 6rem;
+}
+
+.post__form button {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75px;
+}
+
+.aside__content{
+    min-width: 410px;
+    position: fixed;
+}
+
+.aside__title{
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside__title i {
+    cursor: pointer;
+}
+
+.aside__users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+
+.aside__users--info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.aside__users--info div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.aside__users--info div p:nth-child(1) {
+    max-width: 95%;
+}
+
+.aside__users--button {
+    height: 35px;
+}
+
+.aside__users--button button {
+    border: 1px solid var(--colorGrey1);
+    cursor: pointer;
+    height: 25px;
+}
+
+.posts__section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.posts__users {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.posts__users--card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#text__post,
+#title__post {
+    height: 3rem;
+    width: 100%;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.swal-modal {
+    border-radius: 1rem;
+}
+
+.swal-text{
+    color: var(--colorGrey1);
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+
+    #sugesttion{
+        margin-bottom: 2rem;
+    }
+
+    .main__content aside{
+        margin-left: 0;
+    }
+
+    .aside__title{
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    .aside__title div{
+        margin-right: 50px;
+    }
+
+    .posts__section{
+        margin-top: 12rem;
+    }
+
+    aside{
+        max-height: 150px;
+        margin: 5rem 0;
+        position: absolute;
+        top: 420px;
+        left: 35px;
+    }
+
+    .aside__content{
+        padding: 0;
+        display: flex;
+        min-width: 270px;
+        max-width: 310px;
+        width: 85%;
+        overflow-x: auto;
+        position: absolute;
+    }
+
+    .aside__content li {
+        min-width: 200px;
+        height: 120px;
+        width: 50%;
+    }
+
+    .aside__users--info {
+        width: 100%;
+    }
+
+    .aside__users--button {
+        align-self: flex-start;
+    }
+
+    .aside__users {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+}

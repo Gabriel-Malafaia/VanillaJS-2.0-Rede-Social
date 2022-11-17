@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My social web create at Kenzie Academy Brasil.">
+    <title>Rede Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/input.css">
+    <link rel="stylesheet" href="../css/margins.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/textArea.css">
+    <link rel="stylesheet" href="../css/texts.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../assets/Kenzie-favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="module" defer src="../scripts/home.js"></script>
+</head>
+<body>
+    <header class="bg-color-grey-1">
+        <h1 class="font-title-1 color-white">TechPosters</h1>
+        <div class="buttons__home">
+            <button class="font-text-1 buttonHome desactive">Sair</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__content">
+            <div class="post__content">
+                <div class="post__first">
+                    <img id="img__user" src="http://franquia.globalmedclinica.com.br/wp-content/uploads/2016/01/investidores-img-02-01.png" alt="">
+                    <div class="post__first--infoUser">
+                        <h2 id="name__user" class="color-grey-1 font-title-3">Nome Usuario</h2>
+                        <p id="work__user" class="font-text-2 color-grey-2">Profissão</p>
+                    </div>
+
+                    <div class="post__first--followers">
+                        <p id="followers__user" class="color-grey-1 font-text-3">Seguidores</p>
+                    </div>
+                </div>
+
+                <div class="post__second">
+                    <form action="" class="post__form">
+                        <textarea name="title" placeholder="Título da sua postagem..." name="titlePost" id="titlePost" cols="30" rows="10"></textarea>
+                        <textarea name="description" placeholder="Conteúdo da sua postagem..." name="contentPost" id="contentPost" cols="30" rows="10"></textarea>
+                        <button class="bg-color-primary color-white button-default medium font-title-4" type="submit">Postar</button>
+                    </form>
+                </div>
+
+                
+
+                <div class="posts__section">
+                    <h2 class="title__container--post font-title-1 color-grey-1">Posts</h2>
+                    <i id="reload__posts" class="fa-solid fa-rotate-right"></i>
+                </div>
+
+
+
+                
+                <ul class="posts__users"></ul>
+            </div>
+            
+            <aside class="aside__desktop">
+                <ul class="aside__content">
+                    <div class="aside__title">
+                        <h2 class="font-title-2">Sugestões pra você seguir</h2>
+                        <i id="reload__followers" class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    
+    <div class="modal__post--bg hidden">
+        <div class="modal__post--extern">
+            <div class="modal__post--intern">
+                <button id="button__closed" class="bg-color-grey-4 modal__post--button">X</button>
+                <div class="modal__post--up">
+                    <img class="modal__info" src="http://franquia.globalmedclinica.com.br/wp-content/uploads/2016/01/investidores-img-02-01.png" alt="">
+                    <div>
+                        <h2 class="modal__info color-grey-1 font-title-3">Nome</h2>
+                        <p class="modal__info font-text-2 color-grey-2">Profissão</p>
+                    </div>
+                </div>
+
+                <div class="modal__post--down">
+                    <h2 class="modal__info font-title-2">Título do Post</h2>
+                    <p class="modal__info color-grey-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque vero vel adipisci ratione, aliquid deserunt saepe voluptatum blanditiis facilis maiores labore consequuntur itaque ipsam, tempora maxime molestias minima. Dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ut delectus. Ducimus reprehenderit, laborum, nobis esse omnis incidunt molestiae itaque et rerum, maxime assumenda fugit in? Nemo distinctio illum libero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/6eb0ccb6ec.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

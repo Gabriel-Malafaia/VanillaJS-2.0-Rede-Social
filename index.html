@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My social web create at Kenzie Academy Brasil.">
+    <title>Rede Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/globalStyles.css">
+    <link rel="stylesheet" href="./src/css/colors.css">
+    <link rel="stylesheet" href="./src/css/animations.css">
+    <link rel="stylesheet" href="./src/css/buttons.css">
+    <link rel="stylesheet" href="./src/css/input.css">
+    <link rel="stylesheet" href="./src/css/margins.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/textArea.css">
+    <link rel="stylesheet" href="./src/css/texts.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="shortcut icon" href="./src/assets/Kenzie-favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="module" defer src="./src/scripts/login.js"></script>
+    
+</head>
+<body>
+
+    <header class="bg-color-grey-1">
+        <h1 class="font-title-1 color-white">TechPosters</h1>
+        <div class="buttons__home">
+            <button class="font-text-1 buttonHome active">Login</button>
+            <button data-modal-control="toRegister" class="font-text-1 buttonHome desactive">Registro</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="modals__container">
+            <div class="modal__login login">
+                <div>
+                    <h2 class="font-title-1 color-grey-0">Login</h2>
+                    <form id="form__login" action="">
+                        <input name="email" class="input-default" required placeholder="Seu e-mail" type="email">
+                        <input name="password" class="input-default" required placeholder="Sua senha" type="password">
+                        <button class="font-title-3 color-white button-default medium bg-color-primary">Logar</button>
+                    </form>
+                    <p class="color-grey-0 font-text-4">Ainda não possui cadastro?</p>
+                    <button data-modal-control="toRegister" class="desactive font-text-1 button__registro bg-color-white color-grey-0 button-default medium">Ir para página de registro</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="modal__invalid--userLogin hidden">
+        <div class="bg-color-primary radius3 modal__userLogin">
+            <div class="modal__userLogin--content">
+                <h2 class="font-title-3 color-white">Acesso não autorizado</h2>
+                <p class="font-text-1 color-white">Essa conta não existe ou está incorreta, verifique seus dados.</p>
+                <button id="closed__modal--error" class="font-text-1 button-default little">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
+
+
+
+
+
+

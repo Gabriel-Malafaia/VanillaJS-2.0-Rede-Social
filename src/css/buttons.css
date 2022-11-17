@@ -1,0 +1,93 @@
+.button-default{
+    width: 100%;
+    border-radius: var(--radius3);
+    padding: 0 16px;
+    height: var(--buttonHeigthDefault);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid var(--colorGrey2);
+}
+
+.button-default.medium{
+    height: var(--buttonHeigthMedium);
+}
+
+.button-default.little{
+    height: var(--buttonHeigthLittle);
+}
+
+.buttonHome.active {
+    background-color: var(--colorGrey2);
+    color: var(--colorWhite);
+}
+
+.buttonHome.desactive {
+    background-color: var(--colorGrey1);
+    color: var(--colorGrey4);
+}
+
+.buttonHome{
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons__home button{
+    cursor: pointer;
+}
+
+.button__voltar.absolute{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    color: var(--colorGrey0);
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+
+.button__voltar:hover,
+.button__registro:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.posts__buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.posts__buttons div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.posts__buttons button {
+    height: 25px;
+}
+
+.posts__buttons img,
+.posts__buttons button {
+    cursor: pointer;
+}
+
+.swal-button--danger{
+    border: 2px solid rgb(255, 139, 139);
+}
+
+.button__notFollow{
+    background-color: var(--colorWhite);
+}
+
+.button__isFollow{
+    background-color: var(--colorPrimary);
+    color: white;
+}
+
+.button__notFollow,
+.button__isFollow{
+    transition: all 0.4s;
+}
